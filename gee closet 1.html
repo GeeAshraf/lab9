@@ -1,16 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="style.css" />
-  <title>Gee closet</title>
- 
+  <title>Online Clothing Store</title>
 </head>
-
 <body>
-  <style>
+     <style>
     ul {
             background-color: lightgray;
             padding: 70px;
@@ -57,14 +51,15 @@
           box-shadow: 5px 5px 15px black;
           box-sizing: border-box;
          }
-         buy-button{
+     .buy-jacket{
           background-color: darkred;
           color: white;
           padding: 10px 20px;
           border-radius: 5px;
          }
-         buy-button:hover{
+         .buy-jacket:hover{
           background-color: red;
+          color:bisque;
           cursor: pointer;
          }
          footer{
@@ -76,63 +71,57 @@
          }
     
   </style>
-  <nav>
-    <a href="#">Home</a> |
-    <a href="#">Women</a> |
-    <a href="#">Contact</a>
+
+  <!-- Navigation Bar -->
+  <nav id="navbar">
+    <ul>
+      <li><a href="#main-heading">Home</a></li>
+      <li><a href="#category-list">Categories</a></li>
+      <li><a href="#product-list">Products</a></li>
+      <li><a href="#feedback-form">Feedback</a></li>
+      <li><a href="#footer">Contact</a></li>
+    </ul>
   </nav>
-  <h1>
-    Welcome to Gee closet!
-  </h1>
-  <p>
-    the most stylish shop!
-  </p>
-  <h2> categories </h2>
-  <ul>
-    <li> Jeans </li>
-    <li> Tops </li>
-    <li> Sets </li>
-    <li> Bags </li>
+
+  <!-- Main Content -->
+  <h1 id="main-heading">Welcome to Our Clothing Store</h1>
+
+  <ul id="category-list">
+    <li>T-Shirts</li>
+    <li>Pants</li>
+    <li>Outerwear</li>
   </ul>
 
-  <h2>  Products </h2>
-  <ul>  
-    <li>    
-        <img src="" alt="jeans" />
-        <h3>dark denim </h3> 
-        <p> 900.00 </p>
-    </li>
-    <li>
-        <img src="" alt="top" />
-        <h3>black top</h3> 
-        <p> 400.00 </p>
-    </li>
-    <li>
-        <img src="" alt="set" />
-        <h3> brown set </h3> 
-        <p> 1900.00 </p>
-    </li>
-    <li>
-        <img src="" alt="small bag" />
-        <h3>white bag </h3> 
-        <p> 900.00 </p>
-    </li>
-  </ul>
- <form> 
-    <label>Name:</label>
-    <input type="text">
+  <div id="product-list">
+    <h2 id="product1">T-Shirt</h2>
+    <img id="img-tshirt" width="200" height="auto">
+    <p>Price: $20.00 each</p>
+    <button style="color:red" buy-jacket">Buy</button>
 
-    <label>Feedback:</label>
-    <textarea></textarea>
+    <h2 id="product2">Jeans</h2>
+    <img id="img-jeans" width="200" height="auto">
+    <p>Price: $40.00 each</p>
+    <button style="color:red" buy-jacket">Buy</button>
 
-    <input type="submit" value="Send">
- </form>
+    <h2 id="product3">Jacket</h2>
+    <img id="img-jacket" width="200" height="auto">
+    <p>Price: $60.00 each</p>
+   <button style="color:red" buy-jacket">Buy</button>
+  </div>
 
- <footer>   
-    <p>Email: geecloset@store.com</p>
-    <p>Address: Cairo, Egypt</p>
- </footer>
-  <script src="script.js"></script>
+  <form id="feedback-form">
+    <label for="name">Name:</label>
+    <input type="text" id="name"><br>
+
+    <label for="feedback">Feedback:</label>
+    <textarea id="feedback"></textarea><br>
+
+    <input type="button" value="Submit">
+  </form>
+
+  <footer id="footer">
+    <p>Contact us at: (555) 987-6543 | info@clothingstore.com</p>
+  </footer>
+
 </body>
-
 </html>
